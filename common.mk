@@ -23,6 +23,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/sm7125-common/sm7125-common-vend
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
