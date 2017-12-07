@@ -30,6 +30,11 @@ PRODUCT_PACKAGES += \
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
