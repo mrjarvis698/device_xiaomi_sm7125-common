@@ -18,6 +18,9 @@ COMMON_PATH := device/xiaomi/sm7125-common
 
 BUILD_BROKEN_DUP_RULES := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
