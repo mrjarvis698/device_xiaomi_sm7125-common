@@ -15,6 +15,7 @@
 #
 
 COMMON_PATH := device/xiaomi/sm7125-common
+SEPOLICY_PATH := device/xiaomi/sm7125-common-sepolicy
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -131,6 +132,10 @@ VENDOR_SECURITY_PATCH := 2020-02-01
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(SEPOLICY_PATH)/private
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(SEPOLICY_PATH)/public
+BOARD_SEPOLICY_DIRS += $(SEPOLICY_PATH)/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
