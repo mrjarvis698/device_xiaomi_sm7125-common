@@ -61,6 +61,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
