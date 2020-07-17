@@ -16,7 +16,7 @@
 *
 */
 
-#define LOG_TAG "LightService"
+#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_sm7125"
 
 #include <log/log.h>
 
