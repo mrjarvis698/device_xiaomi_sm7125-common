@@ -16,9 +16,9 @@
 *
 */
 
-#include "init_common.h"
-#include "vendor_init.h"
+#ifndef __INIT_COMMON__H__
+#define __INIT_COMMON__H__
 
-void vendor_load_properties() {
-    load_common_properties();
-}
+void load_common_properties();
+
+#endif
