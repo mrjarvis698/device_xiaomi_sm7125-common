@@ -444,3 +444,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# XiaomiParts
+$(call inherit-product-if-exists, vendor/XiaomiParts/xiaomiparts.mk)
+
+PRODUCT_PACKAGES += \
+  init.xiaomiparts.rc \
+  init.xiaomi_parts.rc \
+  init.parallax.rc \
+  init.parallax.sh \
+  init.blur.rc \
+  init.blur.sh
