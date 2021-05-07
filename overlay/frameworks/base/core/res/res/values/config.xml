@@ -732,5 +732,8 @@
           manually by the user. Off by default, since the expected haptic feedback may not be
           available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
-
+    
+    <!-- Maximum number of supported users -->
+    <bool name="config_enableMultiUserUI">true</bool>
+    <integer name="config_multiuserMaximumUsers">5</integer>
 </resources>
