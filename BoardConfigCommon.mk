@@ -15,7 +15,6 @@
 #
 
 COMMON_PATH := device/xiaomi/sm7125-common
-SEPOLICY_PATH := device/xiaomi/sm7125-common-sepolicy
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -208,9 +207,8 @@ VENDOR_SECURITY_PATCH := 2020-07-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(SEPOLICY_PATH)/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(SEPOLICY_PATH)/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(SEPOLICY_PATH)/vendor
+# Device Sepolicy
+include device/xiaomi/sm7125-common-sepolicy/sepolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Side FP key for InputDispatcher to skip
