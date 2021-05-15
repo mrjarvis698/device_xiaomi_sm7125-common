@@ -565,7 +565,7 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
-vendor/lib64/liboemcrypto.so
+vendor/lib64/liboemcrypto.so|5bc6ec673af97ff2883c847bedec7962dbf9d9a0
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
