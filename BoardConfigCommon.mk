@@ -248,6 +248,10 @@ HOSTAPD_VERSION := VER_0_8_X
 TARGET_USES_ICNSS_QMI := true
 CONFIG_ACS := true
 CONFIG_IEEE80211AC := true
+BOARD_HAS_ATH_WLAN_AR6320 := true
+
+# WiFi_AR6320
+include vendor/qcom/proprietary/wlan/ath6kl-utils/Android.mk
 
 # Inherit proprietary blobs
 -include vendor/xiaomi/sm7125-common/BoardConfigVendor.mk
