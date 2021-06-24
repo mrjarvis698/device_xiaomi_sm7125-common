@@ -105,6 +105,10 @@ ro.audio.pcm.samplerate=48000
 # CNE
 persist.vendor.cne.feature=1
 
+
+# Corvus maintainer
+ro.corvus.maintainer=mrjarvis698
+
 # Dalvik
 dalvik.vm.dexopt.secondary=true
 dalvik.vm.dex2oat64.enabled=true
