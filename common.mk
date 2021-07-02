@@ -213,6 +213,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+# UBtouch
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/bluebinder.override:$(TARGET_COPY_OUT_SYSTEM)/etc/init/bluebinder.override \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/fpc-disable.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/init/fpc-disable.conf \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/lxc-android-config.override:$(TARGET_COPY_OUT_SYSTEM)/etc/init/lxc-android-config.override \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/mount-android.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/init/mount-android.conf \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/repowerd.override:$(TARGET_COPY_OUT_SYSTEM)/etc/init/repowerd.override \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/ssh.override:$(TARGET_COPY_OUT_SYSTEM)/etc/init/ssh.override \
+    $(LOCAL_PATH)/ubtouch/system/etc/init/usb-tethering.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/init/usb-tethering.conf \
+    $(LOCAL_PATH)/ubtouch/system/etc/ofono/main.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ofono/main.conf \
+    $(LOCAL_PATH)/ubtouch/system/etc/ofono/ril_subscription.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ofono/ril_subscription.conf \
+    $(LOCAL_PATH)/ubtouch/system/etc/pulse/touch-android9.pa:$(TARGET_COPY_OUT_SYSTEM)/etc/pulse/touch-android9.pa \
+    $(LOCAL_PATH)/ubtouch/system/etc/ubuntu-touch-session.d/android.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ubuntu-touch-session.d/android.conf
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubtouch/system/lib/udev/rules.d/70-miatoll.rules:$(TARGET_COPY_OUT_SYSTEM)/bin/lib/udev/rules.d/70-miatoll.rules
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubtouch/system/usr/bin/fpc-key-disabler:$(TARGET_COPY_OUT_SYSTEM)/usr/bin/fpc-key-disabler \
+    $(LOCAL_PATH)/ubtouch/system/usr/share/halium-overlay/system/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/usr/share/halium-overlay/system/audio_policy_configuration.xml
+
 # Ueventd
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
