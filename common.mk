@@ -319,6 +319,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sm7125
 
+# Pixel-Photos Original Size Hack
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
